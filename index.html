@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Expenses Calculator</title>
+</head>
+
+<body>
+
+    <h1>EXPENSE CALCULATOR</h1>
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">
+            0.00 &#8377;
+        </h1>
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">
+                    +0.00 &#8377;
+                </p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money minus">
+                    -0.00 &#8377;
+                </p>
+            </div>
+        </div>
+        <h3>History</h3>
+        <ul class="list" id="list">
+            <!-- <li class="minus">
+                Cash <span>-400.00 &#8377</span>
+                <button class="delete-btn">X</button>
+            </li> -->
+        </ul>
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" placeholder="Enter Text" id="text" autocomplete="off">
+            </div>
+            <div class="form-control">
+                <label for="amount">
+                    Amount <br> <strong>
+                        (use  ' - ' sign for Expense and ' + ' sign for Income)  
+                    </strong>
+                </label>
+                <input type="text" autocomplete="off" placeholder="Enter amount" id="amount">
+            </div>
+            <button class="btn">Add Transaction</button>
+        </form>
+    </div>
+</body>
+<footer>
+    By GHANA ♥ You Can Find the source code <a href="#">HERE</a>
+</footer>
+<script src="./index.js"></script>
+
+</html>
